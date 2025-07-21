@@ -1,0 +1,13 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hdHRpIiwiaWQiOiI2ODc3YmRhODRhOTI3NWRkYTE5MmM0NzIiLCJpYXQiOjE3NTI2NzgwNzR9.sI5SD-GC2q1OTXQ06OqoaYUsx6ONjscjjmDKiMRhWt8
+
+{ 
+    "title": "Node.js ja MongoD", 
+    "author": "Matti Multanen",
+    "url": "https://example.com/blog",
+    "likes": 0,
+    "userId": "6877bc52dbf81278ccd9206b"
+}
+
+# TEE DELETE- JA PÄIVITYS-TESTI! MIKSI TESTI PÄIVITTYY MONGODB:EEN?

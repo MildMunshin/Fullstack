@@ -120,6 +120,13 @@ const App = () => {
           setNewName('')
           setNewNumber('')
         })
+        .catch(error => {
+          console.log(error.response.data)
+          setAddedMessage({ text: `${error.response.data.error}`, type: 'error' })
+          setTimeout(() => {
+            setAddedMessage(null)
+          }, 5000)
+        })
     }
   }
 
