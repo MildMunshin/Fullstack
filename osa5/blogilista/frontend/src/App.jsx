@@ -120,7 +120,7 @@ const App = () => {
     const updatedBlog = {
       ...blog,
       likes: blog.likes + 1,
-      user: blog.user.id  // Lähetetään vain id backendille
+      user: blog.user.id
     }
 
     try {
@@ -151,7 +151,7 @@ const App = () => {
   }
 
   const loginForm = () => (
-    <Togglable buttonLabel="login">
+    <Togglable buttonLabel="Login">
       <LoginForm
         username={username}
         password={password}
@@ -172,7 +172,7 @@ const App = () => {
   )
 
   const blogForm = () => (
-    <Togglable buttonLabel="new blog" ref={blogFormRef}>
+    <Togglable buttonLabel="New blog" ref={blogFormRef}>
       <BlogForm
         addBlog={addBlog}
         newTitle={newTitle}

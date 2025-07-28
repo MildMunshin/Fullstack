@@ -9,7 +9,7 @@ const BlogForm = ({ addBlog, newTitle, newAuthor, newUrl, handleTitleChange, han
     <div>
       Url: <input value={newUrl} onChange={handleUrlChange} />
     </div>
-    <button type="submit">add</button>
+    <button type="submit">Add</button>
   </form>
 )
 
